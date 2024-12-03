@@ -17,12 +17,13 @@ router.delete("/posts/:id", (req, resp) =>{
 
 router.get("/posts/:id", (req, resp) =>{
     let idPost = req.params.id
-    let postSee = array.forEach((curPost) =>{
-        if (curPost.id === idPost){
-            return curPost
-        } 
-    })
-    resp.json(postSee);
+    // let postSee = array.forEach((curPost) =>{
+    //     if (curPost.id === idPost){
+    //         return curPost
+    //     } 
+    // })
+    // resp.json(postSee);
+    resp.json(`Stai visualizzando il post ${idPost}`)
 })
 
 router.delete("/posts/:id", (req, resp) =>{
