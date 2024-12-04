@@ -23,12 +23,6 @@ router.delete("/:id", (req, resp) =>{
     resp.json(`Post ${id} cancellato`);
 })
 
-
-router.delete("/:id", (req, resp) =>{   
-    let id = req.params.id
-    resp.send(`Post ${id} cancellato`);
-})
-
 router.post("", (req, resp) =>{
     resp.send("Aggiunto nuovo post")
 })
